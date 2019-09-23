@@ -1,0 +1,63 @@
+{{#partial "title" }}
+    Welcome to wild-life tracker
+{{/partial}}
+
+<div class="  navigation">
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+            <ul id="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href='/newanimal'>Add animal</a></li>
+                <li><a href='/animals'>All animal</a></li>
+                <li><a href='/sighting'>Post sighting</a> </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="animal">
+        <div class="formtainer">
+            <form action="/newanimal">
+                <fieldset>
+                    <input type="number" name="id" value="" class="form-control" placeholder="Id Number"  maxlength="8"  required>
+                </fieldset>
+                <fieldset>
+                    <input type="text" name="name" value="" class="form-control" placeholder="Name" required>
+                </fieldset>
+                <fieldset>
+                    <input type="text" name="category" value="" class="form-control" placeholder="Category" required>
+                </fieldset>
+                </br>
+                <label>Health</label>
+                &emsp;<select name="health">
+                <option>Sick</option>
+                <option>Okay</option>
+                <option>Healthy</option>
+            </select>
+                <br>
+                <label>Age</label>
+                &emsp;<select name="age">
+                <option>Newborn</option>
+                <option>Young</option>
+                <option>Adult</option>
+            </select>
+                </br>
+                <fieldset>
+                    <input type="text" name="status" value="" class="form-control" placeholder="Status" required>
+                </fieldset>
+                <fieldset>
+                    <button style="width: 150px;" name="submit" type="submit" id="submit" data-submit="...Sending">Add Animal!</button>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+<!--index.hbs.-->
+{{#partial "content"}}
+
+
+{{/partial}}
+
+{{> layout.hbs}}
