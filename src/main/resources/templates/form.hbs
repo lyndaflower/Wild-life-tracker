@@ -14,45 +14,21 @@
         </div>
     </nav>
 </div>
-
 <div class="container">
-    <div class="animal">
-        <div class="formtainer">
-            <form action="/newanimal">
-                <fieldset>
-                    <input type="number" name="id" value="" class="form-control" placeholder="Id Number"  maxlength="8"  required>
-                </fieldset>
-                <fieldset>
-                    <input type="text" name="name" value="" class="form-control" placeholder="Name" required>
-                </fieldset>
-                <fieldset>
-                    <input type="text" name="category" value="" class="form-control" placeholder="Category" required>
-                </fieldset>
-                </br>
-                <label>Health</label>
-                &emsp;<select name="health">
-                <option>Sick</option>
-                <option>Okay</option>
-                <option>Healthy</option>
-            </select>
-                <br>
-                <label>Age</label>
-                &emsp;<select name="age">
-                <option>Newborn</option>
-                <option>Young</option>
-                <option>Adult</option>
-            </select>
-                </br>
-                <fieldset>
-                    <input type="text" name="status" value="" class="form-control" placeholder="Status" required>
-                </fieldset>
-                <fieldset>
-                    <button style="width: 150px;" name="submit" type="submit" id="submit" data-submit="...Sending">Add Animal!</button>
-                </fieldset>
-            </form>
-        </div>
-
-    </div>
+   <form action="/newanimal">
+       <div class="form-group" >
+           <label for="name">Enter Hero Name</label>
+           <input type="text" id="name" name="name" class="form-control" required>
+       </div>
+       <div class="form-group">
+           <label>Endangered</label>
+           <input type="checkbox" name="endangered">
+       </div>
+       <div class="form-group">
+           <button type="submit" class="btn">Add Animal</button>
+       </div>
+   </form>
+</div>
 
 <!--index.hbs.-->
 {{#partial "content"}}
