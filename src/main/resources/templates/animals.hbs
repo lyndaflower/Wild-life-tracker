@@ -1,0 +1,14 @@
+{{#partial "content" }}
+
+
+    <div>
+         {{#if animal}}
+             {{#each animal}}
+                <p>Animal's name: {{name}}</p>
+            {{/each}}
+            {{/if}}
+    </div>
+
+{{/partial}}
+
+{{> layout.hbs}}

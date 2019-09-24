@@ -122,3 +122,6 @@
 .navigation {
 padding-block-end : 100px;
 }
+body {
+background-image: url('/images/wolf.jpg');
+}
