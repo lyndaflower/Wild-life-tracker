@@ -13,32 +13,32 @@ public class SightingTest {
 
     @Test
     public void sighting_instantiatesCorrectly_true(){
-        Sighting testSighting = new Sighting("john", "North Forest", 1);
+        Sighting testSighting = new Sighting("lynda", "nyungwe", 1);
         assertEquals(true, testSighting instanceof Sighting);
     }
 
     @Test
     public void getName_personInstantiatesWithName_John(){
-        Sighting testSighting = new Sighting("John", "North Forest", 1);
-        assertEquals("John", testSighting.getName());
+        Sighting testSighting = new Sighting("lynda", "nyungwe", 1);
+        assertEquals("lynda", testSighting.getName());
     }
 
     @Test
     public void getAnimalId_instantiatesWithAnimalId_int(){
-        Sighting testSighting = new Sighting("John", "North Forest", 1);
+        Sighting testSighting = new Sighting("lynda", "nyungwe", 1);
         assertEquals(1, testSighting.getAnimalId());
     }
 
     @Test
     public void getLocation_sightingInstatiatesWithLocation_String(){
-        Sighting testSighting = new Sighting("John", "North Forest", 1);
-        assertEquals("North Forest", testSighting.getLocation());
+        Sighting testSighting = new Sighting("lynda", "nyungwe", 1);
+        assertEquals("nyungwe", testSighting.getLocation());
     }
 
     @Test
     public void equals_returnsTrueIfNameAndLocationAreSame_true(){
-        Sighting testSighting = new Sighting("John", "North Forest", 1);
-        Sighting secondSighting  = new Sighting("John", "North Forest", 1);
+        Sighting testSighting = new Sighting("John", "nyungwe", 1);
+        Sighting secondSighting  = new Sighting("John", "nyungwe", 1);
         assertTrue(testSighting.equals(secondSighting));
     }
 
@@ -51,7 +51,7 @@ public class SightingTest {
 
     @Test
     public void all_returnsAllInstancesOfASighting(){
-        Sighting firstSighting = new Sighting("John", "North Forest", 1);
+        Sighting firstSighting = new Sighting("John", "nyungwe", 1);
         firstSighting.save();
         Sighting secondSighting = new Sighting("Beth", "SE Forest", 2);
         secondSighting.save();

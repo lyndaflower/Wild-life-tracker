@@ -1,9 +1,8 @@
-<!--{{#partial "content" }}-->
-<!--    Welcome to wild-life tracker-->
-<!--{{/partial}}-->
+{{#partial "content" }}
 
+{{/partial}}
 
-<div class="  navigation">
+<div class=" navigation">
     <nav id="navbar" class="">
         <div class="nav-wrapper">
             <ul id="menu">
@@ -16,16 +15,13 @@
     </nav>
 </div>
 
-<div class="row">
-    <div class="col-sm-6">
+<div class="container">
+
         <h2>Endangered Animal Sighting</h2>
         <form action="/sighting" method="post">
-<!--            #if endangeredAnimals.size() >= 0)-->
             <label>Select Endangered Animal</label>
-            <select name="endangeredAnimalSelected">
-<!--                #foreach($endangered_animal in $endangeredAnimals)-->
-                <option value="$endangered_animal.getId()">$endangered_animal.getName()</option>
-                #end
+            <select name="endangeredAnimal">
+                <option value="endangeredAnimal">Endangered animals</option>
             </select>
             </br>
             <label>Health</label>
@@ -36,48 +32,48 @@
         </select>
             <br>
             <label>Age</label>
-            &emsp;<select name="age">
+            <select name="age">
             <option>Newborn</option>
             <option>Young</option>
             <option>Adult</option>
         </select>
             </br>
             <label>Location</label>
-            &emsp;<input type="text" name="latLong">
+            <input type="text" name="latLong">
             </br>
             <label>Your Name</label>
-            &emsp;<input type="text" name="rangerName">
+            <input type="text" name="rangerName">
             <br>
             <button type="submit" class="btn">Submit Report</button>
-            #end
         </form>
     </div>
-    <div class="col-sm-6">
-        <h2>Non-Endangered Animal Sighting</h2>
-        <form action="/sighting" method="post">
-            #if($animals.size() >= 0)
-            <label>Select Animal</label>
-            &emsp;<select name="animalSelected">
-            #foreach($animal in $animals)
-            <option value="$animal.getId()">$animal.getName()</option>
-            #end
-        </select>
-            </br>
-            <label>Location</label>
-            &emsp;<input type="text" name="latLong">
-            </br>
-            <label>Your Name</label>
-            &emsp;<input type="text" name="rangerName">
-            </br>
-            <button type="submit" class="btn">Submit Report</button>
-            #end
-        </form>
-    </div>
+<!--    <div class="col-sm-6">-->
+<!--        <h2>Non-Endangered Animal Sighting</h2>-->
+<!--        <form action="/sighting" method="post">-->
+
+<!--            <label>Select Animal</label>-->
+<!--            &emsp;<select name="animalSelected">-->
+
+<!--            <option value="{{name}}">Select animals</option>-->
+
+<!--        </select>-->
+<!--            </br>-->
+<!--            <label>Location</label>-->
+<!--            &emsp;<input type="text" name="latLong">-->
+<!--            </br>-->
+<!--            <label>Your Name</label>-->
+<!--            &emsp;<input type="text" name="rangerName">-->
+<!--            </br>-->
+<!--            <button type="submit" class="btn">Submit Report</button>-->
+
+<!--        </form>-->
+<!--    </div>-->
+</div>
 </div>
 
-<!--{{#partial "content"}}-->
+{{#partial "content"}}
 
 
-<!--{{/partial}}-->
+{{/partial}}
 
-<!--{{> layout.hbs}}-->
+{{> layout.hbs}}
