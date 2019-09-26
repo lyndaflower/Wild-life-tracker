@@ -1,11 +1,11 @@
 # Wild-life-tracker
 
-## Author *UMURERWA Lynda Flower*
+## Author 
+*UMURERWA Lynda Flower*
 
 # DESCRIPTION
 
-This is an app that allows user to add animals to the database andalso allow the ranger to allow the report an endangered animal. The superheros also must be able to be added into a super hero group called superhero-squad hence the name Hero-Squad.
-
+This is an app that allows user to add animals to the database andalso allow the ranger to allow the report an endangered animal. 
 
 # User story
 
@@ -33,13 +33,13 @@ Gradle is used as the build tool and can be installed with sdkman:
 # SETUP/INSTALLATION
 **{follow the below instructions for set up.}**
 
-1.You will need Internet connection.
+1.You will need  to be connected to an Internet.
  
-2.You need to get into the Hero-Squad Repository.
+2.You need to get into the wilf-life-tracker Repository.
 
-    Link:-> https://github.com/lyndaflower/Hero-Squad
+    Link:-> https://github.com/wilf-life-tracker
 
-3.From there you can access the Hero-Squad.
+3.From there you can access the wilf-life-tracker.
 
 4.Clone the project.
 
@@ -50,6 +50,8 @@ Gradle is used as the build tool and can be installed with sdkman:
     gradle run.
 
 # TECHNOLOGIES USED:
+
+* Heroku
 
 * Java - source language.
 
@@ -62,8 +64,6 @@ Gradle is used as the build tool and can be installed with sdkman:
 * Spark
 
 * PostgreSQL
-
-* Heroku
 
 
 # Support & Contact
