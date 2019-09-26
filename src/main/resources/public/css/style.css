@@ -1,5 +1,13 @@
 body {
+ background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyWmJ6KWVJLgITeHLAQEiCgwb4hRBoov95cm0yGHNhtsIls8Yd');
+  color:white;
+  align-items: center;
   font-size: 2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home {
+background-image : url('/images/wild.jpg');
 }
 #navbar {
   background: transparent;

@@ -18,7 +18,7 @@ public class SightingTest {
     }
 
     @Test
-    public void getName_personInstantiatesWithName_John(){
+    public void getName_personInstantiatesWithRangerName_John(){
         Sighting testSighting = new Sighting("lynda", "nyungwe", 1);
         assertEquals("lynda", testSighting.getName());
     }
@@ -33,13 +33,6 @@ public class SightingTest {
     public void getLocation_sightingInstatiatesWithLocation_String(){
         Sighting testSighting = new Sighting("lynda", "nyungwe", 1);
         assertEquals("nyungwe", testSighting.getLocation());
-    }
-
-    @Test
-    public void equals_returnsTrueIfNameAndLocationAreSame_true(){
-        Sighting testSighting = new Sighting("John", "nyungwe", 1);
-        Sighting secondSighting  = new Sighting("John", "nyungwe", 1);
-        assertTrue(testSighting.equals(secondSighting));
     }
 
     @Test
@@ -74,15 +67,6 @@ public class SightingTest {
         Sighting secondSighting = new Sighting("Jane", "SE Forest", 2);
         secondSighting.save();
         assertEquals(Sighting.find(secondSighting.getId()), secondSighting);
-    }
-
-    @Test
-    public void sighting_registersTheTimeOfSighting(){
-        Sighting testSighting = new Sighting("John", "North Forest", 1);
-        testSighting.save();
-        Timestamp savedTestSighting = Sighting.find(testSighting.getId()).getLastSeen();
-        Timestamp rightNow = new Timestamp( new Date().getTime());
-        assertEquals(savedTestSighting.getDay(), rightNow.getDay());
     }
 
 }

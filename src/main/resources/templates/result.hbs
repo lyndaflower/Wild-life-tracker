@@ -2,7 +2,7 @@
 
 {{/partial}}
 
-<div class="  navigation">
+<div class=" navigation">
     <nav id="navbar" class="">
         <div class="nav-wrapper">
             <ul id="menu">
@@ -14,14 +14,20 @@
         </div>
     </nav>
 </div>
-<div class="home">
 
+{{#if sightting}}
+    {{#each sightting}}
+        <div class="success">
+            <p>Animal's name: {{location}}</p>
+            <p>Animal's health:{{name}}</p>
+        </div>
+    {{/each}}
+{{/if}}
 </div>
-<style>
-    body{
+</div>
+</div>
+</div>
 
-    }
-</style>
 {{#partial "content"}}
 
 
