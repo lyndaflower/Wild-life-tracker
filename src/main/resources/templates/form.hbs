@@ -9,34 +9,37 @@
                 <li><a href="/">Home</a></li>
                 <li><a href='/newanimal'>Add animal</a></li>
                 <li><a href='/animals'>All animal</a></li>
-                <li><a href='/sighting'>Post sighting</a> </li>
+                <li><a href='/addsighting'>Post sighting</a> </li>
             </ul>
         </div>
     </nav>
 </div>
 <div class="container">
+    <div class="stylee">
+        <h2>Add wild animal </h2>
    <form action="/animals" method="post">
        <div class="form-group" >
            <label for="name">Enter animal name</label>
-           <input type="text" id="name" name="name" class="form-control" required>
+           <input type="text" id="name" name="name" class="form-control" placeholder="type name ..." required>
        </div>
        <div class="form-group">
            <label for="health">Health</label>
-        <input type="text" name="health" class="form-control" required>
+        <input type="text" name="health" class="form-control" placeholder="type health ..." required>
        </div>
        <div class="form-group">
          <label for="age">Age</label>
-         <input  type="text" name="age" class="form-control" required>
+         <input  type="text" name="age" class="form-control" placeholder="type age ..." required>
        </div>
        <div class="form-group">
            <label>Endangered</label>
-           <input type="checkbox" name="endangered">
+           <input type="checkbox" name="endangered" required>
        </div>
        <div class="form-group">
-           <button type="submit" class="btn">Add Animal</button>
+           <button type="submit" style="background-color: #333300; color: white;">Add Animal</button>
        </div>
-   </form>
-</div>
+     </form>
+    </div>
+    </div>
 
 {{#partial "content"}}
 

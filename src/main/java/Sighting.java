@@ -1,27 +1,20 @@
 import org.sql2o.*;
 import java.util.List;
 
-
 public class Sighting{
     private String name;
     private String location;
     private int id;
-    private String animalId;
 
-
-    public Sighting(String name, String location, String animalId) {
+    public Sighting(String name, String location) {
         this.name = name;
         this.location = location;
-        this.animalId = animalId;
     }
 
     public String getLocation(){
         return location;
     }
 
-    public String getAnimalId(){
-        return animalId;
-    }
     public int getId(){
         return id;
     }

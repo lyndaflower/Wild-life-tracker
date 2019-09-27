@@ -9,37 +9,24 @@
                 <li><a href="/">Home</a></li>
                 <li><a href='/newanimal'>Add animal</a></li>
                 <li><a href='/animals'>All animal</a></li>
-                <li><a href='/sighting'>Post sighting</a> </li>
+                <li><a href='/addsighting'>Post sighting</a> </li>
             </ul>
         </div>
     </nav>
 </div>
 
     <div class="container">
-    <div class="row">
-    <div class="col-md-6">
+        <div class="taa">
         <h2> Animal Sighting</h2>
         <form action="/sighting" method="post">
             <label>Location </label>
-            <input type="text" name="location">
+            <input type="text" name="location" class="form-control" placeholder="type location ..." required>
             <br>
             <label>Ranger name</label>
-            <input type="text" name="name">
-            <button type="submit" class="btn">Submit Report</button>
+            <input type="text" name="name" class="form-control" placeholder="type ranger name ..." required>
+            <br>
+            <button type="submit" style="background-color:#4d2600; color : white;">Submit Report</button>
         </form>
-    </div>
-    <div class="col-md-6">
-        <div class="well">
-            {{#if sightting}}
-                {{#each sightting}}
-                    <div class="success">
-                        <p>Animal's name: {{location}}</p>
-                        <p>Animal's health:{{name}}</p>
-                    </div>
-                {{/each}}
-            {{/if}}
-        </div>
-    </div>
     </div>
     </div>
 

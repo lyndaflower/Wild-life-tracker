@@ -1,6 +1,6 @@
 body {
- background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyWmJ6KWVJLgITeHLAQEiCgwb4hRBoov95cm0yGHNhtsIls8Yd');
-  color:white;
+ background-image:url('https://wallpaperbro.com/img/142372.jpg');
+  color:black;
   align-items: center;
   font-size: 2em;
   background-size: cover;
@@ -74,7 +74,8 @@ background-image : url('/images/wild.jpg');
 }
 
 #navbar li a {
-  color: black;
+  color: white;
+  font-weight : bold;
   display: block;
   font-size: 0.7em;
   height: 50px;
@@ -133,5 +134,46 @@ background-image : url('/images/wild.jpg');
 .navigation {
 padding-block-end : 100px;
 }
+.stylee{
+background-color : black;
+opacity : 0.9;
+color : white;
+border-radius: 30px;
+ width: 600px;
+ margin: auto;
+ padding: 30px;
+ font-size: 20px;
+}
+.taa{
+background-color : black;
+opacity : 0.9;
+color : white;
+border-radius: 30px;
+ width: 600px;
+ margin: auto;
+ padding: 30px;
+ font-size: 20px;
+}
+.success{
+background-color : black;
+opacity : 0.9;
+color : white;
+border-radius: 30px;
+ width: 600px;
+ margin: auto;
+ padding: 30px;
+ font-size: 20px;
+}
+.home{
+font-weight: bold;
+float : right;
+margin-right: 60px;
+font-size : 4 em;
+color: white;
+font-style: italic;
+font-weight : bold;
+padding-block-start: 200px;
+}
+
 
 

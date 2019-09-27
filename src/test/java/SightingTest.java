@@ -1,9 +1,7 @@
+/*
 
 import org.junit.*;
 import static org.junit.Assert.*;
-import org.sql2o.*;
-import java.sql.Timestamp;
-import java.util.Date;
 
 
 public class SightingTest {
@@ -13,40 +11,27 @@ public class SightingTest {
 
     @Test
     public void sighting_instantiatesCorrectly_true(){
-        Sighting testSighting = new Sighting("lynda", "nyungwe", 1);
+        Sighting testSighting = new Sighting("lynda", "nyungwe");
         assertEquals(true, testSighting instanceof Sighting);
     }
 
     @Test
-    public void getName_personInstantiatesWithRangerName_John(){
-        Sighting testSighting = new Sighting("lynda", "nyungwe", 1);
+    public void sighting_personInstantiatesWithName(){
+        Sighting testSighting = new Sighting("lynda", "nyungwe");
         assertEquals("lynda", testSighting.getName());
     }
 
     @Test
-    public void getAnimalId_instantiatesWithAnimalId_int(){
-        Sighting testSighting = new Sighting("lynda", "nyungwe", 1);
-        assertEquals(1, testSighting.getAnimalId());
-    }
-
-    @Test
-    public void getLocation_sightingInstatiatesWithLocation_String(){
-        Sighting testSighting = new Sighting("lynda", "nyungwe", 1);
+    public void sighting_instantiatesWithLocation(){
+        Sighting testSighting = new Sighting("lynda", "nyungwe");
         assertEquals("nyungwe", testSighting.getLocation());
     }
 
     @Test
-    public void save_insertsObjectIntoDatabase_Sighting(){
-        Sighting testSighting = new Sighting("John", "North Forest", 1);
-        testSighting.save();
-        assertTrue(Sighting.all().get(0).equals(testSighting));
-    }
-
-    @Test
-    public void all_returnsAllInstancesOfASighting(){
-        Sighting firstSighting = new Sighting("John", "nyungwe", 1);
+    public void sighting_returnsAllInstancesOfASighting(){
+        Sighting firstSighting = new Sighting("lynda", "nyungwe");
         firstSighting.save();
-        Sighting secondSighting = new Sighting("Beth", "SE Forest", 2);
+        Sighting secondSighting = new Sighting("Beth", "central");
         secondSighting.save();
         assertEquals(true, Sighting.all().get(0).equals(firstSighting));
         assertEquals(true, Sighting.all().get(1).equals(secondSighting));
@@ -54,7 +39,7 @@ public class SightingTest {
 
     @Test
     public void save_assignesIdToSavedObjects(){
-        Sighting testSighting = new Sighting("John", "North Forest", 1);
+        Sighting testSighting = new Sighting("lynda", "nyungwe");
         testSighting.save();
         Sighting anotherSighting = Sighting.all().get(0);
         assertEquals(testSighting.getId(), anotherSighting.getId());
@@ -62,11 +47,12 @@ public class SightingTest {
 
     @Test
     public void find_findObjectWithId(){
-        Sighting testSighting = new Sighting("John", "North Forest", 1);
+        Sighting testSighting = new Sighting("lynda", "nyungwe");
         testSighting.save();
-        Sighting secondSighting = new Sighting("Jane", "SE Forest", 2);
+        Sighting secondSighting = new Sighting("beth", "central");
         secondSighting.save();
         assertEquals(Sighting.find(secondSighting.getId()), secondSighting);
     }
 
 }
+*/

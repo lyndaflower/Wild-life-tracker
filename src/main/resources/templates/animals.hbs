@@ -9,14 +9,13 @@
                 <li><a href="/">Home</a></li>
                 <li><a href='/newanimal'>Add animal</a></li>
                 <li><a href='/animals'>All animal</a></li>
-                <li><a href='/sighting'>Post sighting</a> </li>
+                <li><a href='/addsighting'>Post sighting</a> </li>
             </ul>
         </div>
     </nav>
 </div>
 
     <div class="container">
-        <div class="well">
          {{#if animal}}
              {{#each animal}}
                  <div class="success">
@@ -26,7 +25,6 @@
                  </div>
             {{/each}}
             {{/if}}
-        </div>
     </div>
 
 {{#partial "content"}}
